@@ -1,6 +1,5 @@
 # Portfolio Dev Web
-
-## Site web servant à présenter mes compétences dans le développement Web, permettant de me contacter ainsi que de mes différents projets réalisées
+ Site web servant à présenter mes compétences dans le développement Web, permettant de me contacter ainsi que de mes différents projets réalisées
 
 
 ## Contenu : 
