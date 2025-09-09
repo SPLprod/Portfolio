@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+}
+
+header, footer {
+    color: white;
+}
+
+header {
+    padding: 1em;
+    background: linear-gradient(180deg,rgba(0, 7, 32, 0.9) 10%, rgba(0, 7, 32, 0.65) 50%, rgba(0, 6, 26, 0.15) 85%, rgba(0, 0, 0, 0) 100%);
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    
+}
+
+header ul {
+    display: flex;
+    align-items: baseline;
+}
+
+header ul li {
+    list-style: none;
+    padding: 0 0.5em;
+}
+
+#lang {
+    position: absolute;
+    right: 1em;
+}
+
+#hero, #about, #projects {
+    height: 100vh;
+    display: flex;
+}
+
+#hero {
+    /* justify-content: center; */
+}
+
+.nav {
+    position: sticky;
+    left: 2em;
+}
+
+footer {
+    padding: 1em;
+    background-color: rgba(0, 7, 32, 0.75); 
+}
+
+img, svg {
+    width: 1em;
+}
