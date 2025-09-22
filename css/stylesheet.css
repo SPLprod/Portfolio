@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header, footer {
+    color: white;
+}
+
+body {
+    background-image: url("../img/social_background.png");
+    background-size: 120em;
+}
+
+header {
+    padding: 1em;
+    background: linear-gradient(180deg,rgba(0, 7, 32, 0.9) 10%, rgba(0, 7, 32, 0.65) 50%, rgba(0, 6, 26, 0.15) 85%, rgba(0, 0, 0, 0) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    /* transform: translateZ(0); */
+}
+
+header ul {
+    display: flex;
+    align-items: baseline;
+}
+
+header ul li {
+    list-style: none;
+    padding: 0 0.5em;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.logo {
+    width: 6em;
+}
+
+#lang {
+    position: absolute;
+    right: 1em;
+    background-color: #FFFFFF;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    top: 6em;
+    display: flex;
+    gap: 0.5em;
+}
+
+.fi {
+    padding: 0.5em;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-left: 1em;
+    position: sticky;
+    top: 46vh;
+}
+
+.nav button {
+    border-radius: 5em;
+    padding: 5px;
+    border: 5px solid rgb(31, 136, 218, 50%);
+    background-color: rgb(14, 58, 191, 25%);
+}
+
+.nav button:hover {
+    svg {
+        filter: invert(1);
+    }
+}
+
+.nav svg {
+    width: 3em;
+    height: 3em;
+    color: rgb(31, 136, 218, 50%);
+}
+
+#hero, #about, #projects {
+    height: 100vh;
+    /* di   splay: flex; */
+}
+
+#hero {
+    height: 64vh;;
+}
+
+#hero section {
+    margin-left: 8em;
+    font-size: xx-large;
+    /* margin-top: 2.5em; */
+}
+
+#line {
+    height: 0.3em;
+    margin-left: 0.5em;
+    background-color: #EEBB15;
+    width: 3em
+}
+
+#hero section h3 {
+    margin-left: 1em;
+}
+
+#hero section h3, h1 {
+    -webkit-text-stroke: 4px rgb(14, 58, 191, 25%)
+}
+
+#heroChar {
+    position: absolute;
+    bottom: 0;
+    right: 10em;
+    width: 22.5em;
+    transform: translateZ(0);
+}
+
+.content {
+    width: 50%;
+    margin: auto;
+    padding-top: 10em;
+}
+
+h2 {
+    background-color: #7A94E5;
+    width: 10em;
+    padding: 0.25em 2em;
+    text-align: center;
+    font-size: x-large;
+    color: #FFFFFF;
+}
+
+#about, #projects {
+    background-color: #E3E3E3;
+}
+
+#about p {
+    padding: 1em;
+    background-color: #d7d7d7;
+    margin: 0 0 2.5em 0;
+}
+
+#aboutChar {
+    position: relative;
+    right: -75%;
+    top: 3px;
+    width: 15em;
+}
+
+#stuff {
+    width: 75%;
+    margin: auto;
+}
+
+#roll {
+    padding: 1em;
+    background: #d7d7d7;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#roll img {
+    width: 5em;
+}
+
+.arrow {
+    fill: #EEBB15;
+}
+
+#newProject {
+    border: none;
+    background-color: #EEBB15;
+    color: #FFFFFF;
+    padding: 0.25em 1em;
+    font-weight: 500;
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+#newProject img {
+    width: 1em;
+    margin: 0 0.5em;
+}
+
+.rotate-center {
+	animation: rotate-center 10s linear infinite both;
+}
+
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#carrou {
+    display: flex;
+    justify-content: space-between;
+}
+
+#project {
+    background-color: #7A94E5;
+    border: #001148 solid 2.5px;
+    border-radius: 15px;
+    color: #FFFFFF;
+    width: 40vw;
+    height: 50vh;
+    margin: 2.5em 0;
+}
+
+#project svg {
+    filter: invert(1);
+}
+
+footer {
+    padding: 1em;
+    background-color: rgba(0, 7, 32, 0.75); 
+    display: flex;
+    justify-content: center;
+}
+
+img, svg {
+    width: 3em;
+}
