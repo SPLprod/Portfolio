@@ -1,0 +1,27 @@
+{
+    "fr":{
+        "job" : "Développeur web",
+        "CV":"CV",
+        "aboutMeTitle":"Qui suis-je ?",
+        "aboutMe":"",
+        "knowledge":"Trucs que je connais:",
+        "projectsTitle":"Projets de fou",
+        "makeNew":"Faire un nouveau projet",
+        "contactTitle":"Contactons nous",
+        "formObject":"Objet :",
+        "validButton":"Envoyer"
+    },
+
+    "en":{
+        "job" : "Web developper",
+        "CV":"Resume",
+        "aboutMeTitle":"About me",
+        "aboutMe":"",
+        "knowledge":"Stuff I know :",
+        "projectsTitle":"Main projects",
+        "makeNew":"Make a new project",
+        "contactTitle":"Let's get in touch",
+        "formObject":"Object :",
+        "validButton":"Send"
+    }
+}
