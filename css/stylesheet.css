@@ -64,7 +64,6 @@ header .logo {
     padding: 0.5em;
     border-radius: 0.5em;
     top: 6em;
-    display: flex;
     gap: 0.5em;
 }
 
