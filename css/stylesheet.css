@@ -18,7 +18,7 @@ body {
 
 header {
     padding: 1em 0;
-    background: linear-gradient(180deg,rgba(0, 7, 32, 0.9) 10%, rgba(0, 7, 32, 0.65) 50%, rgba(0, 6, 26, 0.15) 85%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(180deg,rgba(0, 7, 32, 0.9) 10%, rgba(0, 7, 32, 0.65) 50%, rgba(0, 7, 32, 0.15) 85%, rgba(0, 0, 0, 0) 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,6 +42,7 @@ header ul li {
 
 li:hover {
     color: #EEBB15;
+    cursor: pointer;
 }
 
 a {
@@ -71,6 +72,10 @@ header .logo {
     padding: 0.5em;
 }
 
+.fi:hover {
+    cursor: pointer;
+}
+
 .nav {
     display: flex;
     flex-direction: column;
@@ -92,6 +97,7 @@ header .logo {
     i {
         color: #FFFFFF;
     }
+    cursor: pointer;
 }
 
 .nav i {
@@ -175,10 +181,16 @@ h2 {
     background: #d7d7d7;
     display: flex;
     justify-content: space-evenly;
+    overflow: hidden;
 }
 
-#roll img {
-    width: 5em;
+#IKnow {
+    display: flex;
+}
+
+#IKnow i{
+    font-size: 5em;
+    color: rgba(0, 17, 72, 0.75);
 }
 
 .arrow {
@@ -191,18 +203,23 @@ h2 {
     background-color: #EEBB15;
     color: #FFFFFF;
     padding: 0.25em 0.5em;
-    font-weight: 500;
-    font-size: x-large;
     display: flex;
-    align-items: center;
     margin: auto;
 }
 
+#newProject a {
+    display: flex;
+    align-items: center;
+}
 
+#newProject h3 {
+    font-weight: 500;
+    font-size: x-large;
+}
 
 #newProject img {
-    width: 1em;
-    margin: 0 0.5em;
+    width: 2em;
+    margin: 0.25em 0.5em;
 }
 
 #newProject:hover {
@@ -211,6 +228,7 @@ h2 {
 
 .arrow:hover {
     color: #7A94E5;
+    cursor: pointer;
 }
 
 .arrow:nth-of-type(2):hover {
@@ -281,6 +299,7 @@ h2 {
 
 #links i:hover {
     color: #001148;
+    cursor: pointer;
 }
 
 #project h3 {
@@ -291,7 +310,7 @@ h2 {
 
 footer {
     padding: 1em;
-    background-color: rgba(0, 7, 32, 0.75); 
+    background-color: rgba(0, 17, 72, 0.75); 
     display: flex;
     justify-content: center;
 }

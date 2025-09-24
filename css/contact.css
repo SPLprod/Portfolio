@@ -37,6 +37,8 @@ header ul li {
 
 li:hover {
     color: #EEBB15;
+    cursor: pointer;
+
 }
 
 a {
@@ -73,6 +75,10 @@ header .logo {
 
 .fi {
     padding: 0.5em;
+}
+
+.fi:hover {
+    cursor: pointer;
 }
 
 main {
@@ -194,15 +200,24 @@ label {
     background-color: #EEBB15;
     color: #FFFFFF;
     padding: 0.25em 1em;
-    font-weight: 500;
-    font-size: large;
     display: flex;
     align-items: center;
     margin: auto;
 }
 
+#submit img {
+    width: 2em;
+    margin: 0.25em 0.5em;
+}
+
+#submit h3 {
+    font-weight: 500;
+    font-size: large;
+}
+
 #submit:hover {
     background-color: #7A94E5;
+    cursor: pointer;
 }
 
 .rotate-center {
@@ -222,7 +237,7 @@ label {
 
 footer {
     padding: 0.5em;
-    background-color: rgba(0, 7, 32, 0.75); 
+    background-color: rgba(0, 17, 72, 0.75);  
     display: flex;
     justify-content: center;
     position: fixed;
