@@ -36,24 +36,28 @@
             <form id="mailForm">
                 <label for="email">E-mail :</label>
                 <input type="email" id="mail" name="mail" required>
-            </form>
-            <form id="objForm">
                 <label for="object">Object :</label>
                 <input type="text" id="object" name="object" required>
-            </form>
-            <form id="msgForm">
                 <label for="message">Message :</label>
-                <textarea type="text" id="msg" name="msg" rows="15" required></textarea>
+                <textarea type="text" id="msg" name="msg" rows="13" required></textarea>
+                <button id="submit" type="submit"><img class="rotate-center" src="img/white_screw.png" alt="screw"><h3>Valider</h3><img class="rotate-center" src="img/white_screw.png" alt="screw"></button>
             </form>
-            <button id="submit" type="submit"><img class="rotate-center" src="img/white_screw.png" alt="screw"><h3>Valider</h3><img class="rotate-center" src="img/white_screw.png" alt="screw"></button>
         </div>
     </main>
 
     <footer>
-        <div></div>
+        <p>2025 - Ludovic Danjou All rights reserved</p>
         <img class="logo" src="img/Logo_black_mesa_reverted.png" alt="Logo">
     </footer>
     <script src="js/translation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({
+              publicKey: "tPXwJWLi_xwASjjS7",
+            });
+        })();
+    </script>
     <script src="js/sendMail.js"></script>
 </body>
 </html>

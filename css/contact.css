@@ -163,6 +163,7 @@ form {
     margin: auto;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 textarea {
@@ -175,7 +176,7 @@ textarea {
 
 input {
     margin-bottom: 0.5em;
-    width: 75%;
+    width: 90%;
 }
 
 textarea, input {
@@ -235,11 +236,62 @@ label {
   }
 }
 
+footer p {
+    display: none;
+    position: absolute;
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+footer:hover{
+    animation: blurryback 1s both;
+}
+
+@keyframes blurryback {
+    0% {
+        backdrop-filter: blur(0px);
+    }
+    100% {
+        backdrop-filter: blur(40px);
+    }
+}
+
+footer:hover .logo {
+    animation: blurry 2s both;
+}
+
+@keyframes blurry {
+    0% {
+        filter: blur(0px);
+    }
+    100% {
+        filter: blur(40px);       
+    }
+}
+
+footer:hover p {
+    display: block;
+    animation: easein 1s both;
+}
+
+@keyframes easein {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
 footer {
     padding: 0.5em;
     background-color: rgba(0, 17, 72, 0.75);  
     display: flex;
     justify-content: center;
+    align-items: center;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -252,4 +304,49 @@ img, svg {
 
 i {
     font-size: 3em;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    main {
+        width: 85%;
+    }
+
+    #form {
+        height: 75%;
+    }
+
+    h2 {
+        width: 50%;
+        font-size: large;
+    }
+
+    form {
+        width: 75%;
+    }
+
+    .logo {
+        width: 5em;
+    }
+
+    ul {
+        padding-left: 0;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    main {
+        width: 85%;
+    }
+
+    #form {
+        height: 75%;
+    }
+
+    h2 {
+        width: 50%;
+        font-size: large;
+    }
 }
