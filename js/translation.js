@@ -11,7 +11,7 @@ const projectsTitle = document.querySelector("#projects .content h2");
 const makeNew = document.querySelector("#newProject h3");
 const contactTitle = document.querySelector("#form h2");
 const formName = document.querySelector("#mailForm label:nth-of-type(1)");
-const formObject = document.querySelector("#mailForm label:nth-of-type(2)");
+const formObject = document.querySelector("#mailForm label:nth-of-type(3)");
 const validButton = document.querySelector("#submit h3");
 console.log(uLangChoice);
 console.log(langAvailable);
