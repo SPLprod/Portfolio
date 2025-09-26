@@ -294,6 +294,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 0.5em;
 }
 
 #links {
@@ -376,7 +377,7 @@ img, svg {
 
 @media screen and (max-width: 321px) {
     #rightArrow, #leftArrow {
-        top: 290vh !important;
+        top: 300vh !important;
     }
 }
 
@@ -442,12 +443,8 @@ img, svg {
         right: -50%;
     }
 
-    
-
-    
-
     #project h3, #links {
-        font-size: 45px;
+        font-size: 200%;
     }
 
     #project {

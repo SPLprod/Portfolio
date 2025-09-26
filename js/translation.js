@@ -57,7 +57,7 @@ fetch(langJSON)
                         job.innerText = data.fr.job;
                         CV.innerText = data.fr.CV;
                         aboutMeTitle.innerText = data.fr.aboutMeTitle;
-                        aboutMe.innerText = data.fr.aboutMe;
+                        aboutMe.innerHTML = data.fr.aboutMe;
                         knowledge.innerText = data.fr.knowledge;
                         projectsTitle.innerText = data.fr.projectsTitle;
                         makeNew.innerText = data.fr.makeNew;
@@ -79,7 +79,7 @@ fetch(langJSON)
                     job.innerText = data.en.job;
                     CV.innerText = data.en.CV;
                     aboutMeTitle.innerText = data.en.aboutMeTitle;
-                    aboutMe.innerText = data.en.aboutMe;
+                    aboutMe.innerHTML = data.en.aboutMe;
                     knowledge.innerText = data.en.knowledge;
                     projectsTitle.innerText = data.en.projectsTitle;
                     makeNew.innerText = data.en.makeNew;
@@ -99,7 +99,7 @@ fetch(langJSON)
             job.innerText = data.fr.job;
             CV.innerText = data.fr.CV;
             aboutMeTitle.innerText = data.fr.aboutMeTitle;
-            aboutMe.innerText = data.fr.aboutMe;
+            aboutMe.innerHTML = data.fr.aboutMe;
             knowledge.innerText = data.fr.knowledge;
             projectsTitle.innerText = data.fr.projectsTitle;
             makeNew.innerText = data.fr.makeNew;
@@ -112,7 +112,7 @@ fetch(langJSON)
             job.innerText = data.en.job;
             CV.innerText = data.en.CV;
             aboutMeTitle.innerText = data.en.aboutMeTitle;
-            aboutMe.innerText = data.en.aboutMe;
+            aboutMe.innerHTML = data.en.aboutMe;
             knowledge.innerText = data.en.knowledge;
             projectsTitle.innerText = data.en.projectsTitle;
             makeNew.innerText = data.en.makeNew;

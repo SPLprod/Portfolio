@@ -1,10 +1,10 @@
 [
 
     {
-        "title" : "TEST",
-        "thumbnail" : "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWRlOWNjamszdzA2dW85OXU1aGdubmZwemZ5dWRjd2NjOTk0YWk4bSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/aEUiHbQwoEmc0/giphy.gif",
-        "link" : "https://www.figma.com/design/ItKJz3ZAWVjZGiodGsIbIF/Portfolio-DevWeb?node-id=0-1&t=EkXvqA4cr4zClgxa-0",
-        "repo" : "[LINK]"
+        "title" : "PORTFOLIO",
+        "thumbnail" : "img/portfolioDesktopThumbnail.png",
+        "link" : "https://portfoliospl-dun.vercel.app",
+        "repo" : "https://github.com/SPLprod/Portfolio"
     },
 
     {
