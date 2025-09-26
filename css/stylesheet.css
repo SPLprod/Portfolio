@@ -450,7 +450,6 @@ img, svg {
 
     #project {
         width: 100%;
-        margin-bottom: 10em;
     }
 
     .arrow {
@@ -463,6 +462,7 @@ img, svg {
 
     #rightArrow {
         position: absolute;
+        font-size: 4em;
     }
 
     #rightArrow {
