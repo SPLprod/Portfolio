@@ -12,5 +12,10 @@ console.log(messageInput);
 
 mailForm.addEventListener("submit", function (e) {
     e.preventDefault();
-    emailjs.sendForm('contact_service', 'contact_form', this);
+    emailjs.sendForm('service_cj3lehg', 'template_q16qt3i', this)
+    .then(() => {
+        console.log('SUCCESS!');
+    }, (error) => {
+        console.log('FAILED...', error);
+    });
 });

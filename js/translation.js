@@ -10,11 +10,12 @@ const knowledge = document.querySelector("#about .content h3");
 const projectsTitle = document.querySelector("#projects .content h2");
 const makeNew = document.querySelector("#newProject h3");
 const contactTitle = document.querySelector("#form h2");
-const formObject = document.querySelector("#objForm label");
+const formName = document.querySelector("#mailForm label:nth-of-type(1)");
+const formObject = document.querySelector("#mailForm label:nth-of-type(2)");
 const validButton = document.querySelector("#submit h3");
 console.log(uLangChoice);
 console.log(langAvailable);
-console.log(pageTitle);
+console.log(formName);
 
 
 const fr = {lang : "fr"};
@@ -62,6 +63,7 @@ fetch(langJSON)
                         makeNew.innerText = data.fr.makeNew;
                     } else if (pageTitle.innerText == "Portfolio - Contact") {
                         contactTitle.innerText = data.fr.contactTitle;
+                        formName.innerHTML = data.fr.formName;
                         formObject.innerText = data.fr.formObject;
                         validButton.innerText = data.fr.validButton;
                     }
@@ -82,7 +84,9 @@ fetch(langJSON)
                     projectsTitle.innerText = data.en.projectsTitle;
                     makeNew.innerText = data.en.makeNew;
                     } else if (pageTitle.innerText == "Portfolio - Contact") {
+                        CV.innerText = data.en.CV;
                         contactTitle.innerText = data.en.contactTitle;
+                        formName.innerHTML = data.en.formName;
                         formObject.innerText = data.en.formObject;
                         validButton.innerText = data.en.validButton;
                     }
@@ -101,6 +105,7 @@ fetch(langJSON)
             makeNew.innerText = data.fr.makeNew;
         }else if (pageLang.lang == "fr" && pageTitle.innerText == "Portfolio - Contact") {
             contactTitle.innerText = data.fr.contactTitle;
+            formName.innerHTML = data.fr.formName;
             formObject.innerText = data.fr.formObject;
             validButton.innerText = data.fr.validButton;
         }else if (pageLang.lang == "en" && pageTitle.innerText == "Portfolio") {
@@ -112,7 +117,9 @@ fetch(langJSON)
             projectsTitle.innerText = data.en.projectsTitle;
             makeNew.innerText = data.en.makeNew;
         }else if (pageLang.lang == "en" && pageTitle.innerText == "Portfolio - Contact") {
+            CV.innerText = data.en.CV;
             contactTitle.innerText = data.en.contactTitle;
+            formName.innerHTML = data.en.formName;
             formObject.innerText = data.en.formObject;
             validButton.innerText = data.en.validButton;
         }

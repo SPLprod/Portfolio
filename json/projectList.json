@@ -2,14 +2,14 @@
 
     {
         "title" : "TEST",
-        "thumbnail" : "[IMAGE]",
+        "thumbnail" : "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWRlOWNjamszdzA2dW85OXU1aGdubmZwemZ5dWRjd2NjOTk0YWk4bSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/aEUiHbQwoEmc0/giphy.gif",
         "link" : "https://www.figma.com/design/ItKJz3ZAWVjZGiodGsIbIF/Portfolio-DevWeb?node-id=0-1&t=EkXvqA4cr4zClgxa-0",
         "repo" : "[LINK]"
     },
 
     {
         "title" : "TEST2",
-        "thumbnail" : "[IMAGE]",
+        "thumbnail" : "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODc1M2x1cGJoa2sxZWQ2djR2d3VuYmJra3Z6ZWtvMmFicmg2MHhhMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Ju7l5y9osyymQ/giphy.gif",
         "link" : "[LINK]",
         "repo" : "[LINK]"
     }

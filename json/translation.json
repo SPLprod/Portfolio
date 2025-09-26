@@ -8,6 +8,7 @@
         "projectsTitle":"Projets de fou",
         "makeNew":"Faire un nouveau projet",
         "contactTitle":"Contactons nous",
+        "formName" : "Nom :",
         "formObject":"Objet :",
         "validButton":"Envoyer"
     },
@@ -21,6 +22,7 @@
         "projectsTitle":"Main projects",
         "makeNew":"Make a new project",
         "contactTitle":"Let's get in touch",
+        "formName" : "Name :",
         "formObject":"Object :",
         "validButton":"Send"
     }

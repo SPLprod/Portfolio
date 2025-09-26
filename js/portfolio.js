@@ -23,6 +23,7 @@ window.addEventListener('load', Marquee('roll', 0.25))
 
 const leftArrow = document.getElementById("leftArrow");
 const rightArrow = document.getElementById("rightArrow");
+const projectDisplay = document.getElementById("project")
 const projectTitle = document.querySelector("#project h3");
 const projectLink = document.getElementById("versel");
 const repository = document.getElementById("repo");
@@ -33,6 +34,8 @@ console.log(rightArrow);
 console.log(projectTitle);
 console.log(projectLink);
 console.log(repository);
+console.log(projectDisplay);
+
 
 const projectJSON = "json/projectList.json"
 
@@ -44,8 +47,11 @@ fetch(projectJSON)
     console.log(data.length);
     let i = 0;
     projectTitle.innerHTML = data[i].title;
-    projectLink.href = data[i].link
-    repository.href = data[i].repo
+    projectLink.href = data[i].link;
+    repository.href = data[i].repo;
+    
+    projectDisplay.style.background = `url("${data[i].thumbnail}")`;
+    projectDisplay.style.backgroundSize = "cover";
     rightArrow.addEventListener("click", () => {
       ++i;
       console.log(i);
@@ -53,8 +59,11 @@ fetch(projectJSON)
         i = 0;
       }
       projectTitle.innerHTML = data[i].title;
-      projectLink.href = data[i].link
-      repository.href = data[i].repo
+      projectLink.href = data[i].link;
+      repository.href = data[i].repo;
+      projectDisplay.style.background = `url("${data[i].thumbnail}")`;
+      projectDisplay.style.backgroundSize = "cover";
+
     });
 
     leftArrow.addEventListener("click", () => {
@@ -64,13 +73,9 @@ fetch(projectJSON)
         i = data.length - 1;
       }
       projectTitle.innerHTML = data[i].title;
-      projectLink.href = data[i].link
-      repository.href = data[i].repo
+      projectLink.href = data[i].link;
+      repository.href = data[i].repo;
+      projectDisplay.style.background = `url("${data[i].thumbnail}")`;
+      projectDisplay.style.backgroundSize = "cover";
     });
   })
-
-// FOOTER
-
-const footerEffect = document.querySelector('footer')
-const legal = document.querySelector("footer p")
-const footercut = document.getElementById("cut")
