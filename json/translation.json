@@ -3,11 +3,12 @@
         "job" : "Développeur web",
         "CV":"CV",
         "aboutMeTitle":"Qui suis-je ?",
-        "aboutMe":"",
+        "aboutMe":"Je suis un développeur web passionné, actuellement en formation full stack (front end / back end) pour transformer ma passion pour le dev en métier. J’aime créer des sites interactifs, immersifs et centrés sur l’expérience utilisateur. <br></br> <strong>J'aime bien dessiner aussi :)</strong>",
         "knowledge":"Trucs que je connais:",
         "projectsTitle":"Projets de fou",
         "makeNew":"Faire un nouveau projet",
         "contactTitle":"Contactons nous",
+        "formName" : "Nom :",
         "formObject":"Objet :",
         "validButton":"Envoyer"
     },
@@ -16,11 +17,12 @@
         "job" : "Web developper",
         "CV":"Resume",
         "aboutMeTitle":"About me",
-        "aboutMe":"",
+        "aboutMe":"I’m a passionate web developer, currently training as a full stack (front-end / back-end) developer to turn my passion for coding into a career. I enjoy creating interactive, immersive websites focused on user experience. <br></br> <strong>I like to sketch too :)</strong>",
         "knowledge":"Stuff I know :",
         "projectsTitle":"Main projects",
         "makeNew":"Make a new project",
         "contactTitle":"Let's get in touch",
+        "formName" : "Name :",
         "formObject":"Object :",
         "validButton":"Send"
     }

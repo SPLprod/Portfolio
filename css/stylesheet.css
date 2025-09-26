@@ -18,7 +18,7 @@ body {
 
 header {
     padding: 1em 0;
-    background: linear-gradient(180deg,rgba(0, 7, 32, 0.9) 10%, rgba(0, 7, 32, 0.65) 50%, rgba(0, 6, 26, 0.15) 85%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(180deg,rgba(0, 7, 32, 0.9) 10%, rgba(0, 7, 32, 0.65) 50%, rgba(0, 7, 32, 0.15) 85%, rgba(0, 0, 0, 0) 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,6 +42,7 @@ header ul li {
 
 li:hover {
     color: #EEBB15;
+    cursor: pointer;
 }
 
 a {
@@ -71,6 +72,10 @@ header .logo {
     padding: 0.5em;
 }
 
+.fi:hover {
+    cursor: pointer;
+}
+
 .nav {
     display: flex;
     flex-direction: column;
@@ -79,6 +84,7 @@ header .logo {
     margin-left: 1em;
     position: fixed;
     top: 43vh;
+    z-index: 5;
 }
 
 .nav button {
@@ -92,6 +98,7 @@ header .logo {
     i {
         color: #FFFFFF;
     }
+    cursor: pointer;
 }
 
 .nav i {
@@ -175,10 +182,16 @@ h2 {
     background: #d7d7d7;
     display: flex;
     justify-content: space-evenly;
+    overflow: hidden;
 }
 
-#roll img {
-    width: 5em;
+#IKnow {
+    display: flex;
+}
+
+#IKnow i{
+    font-size: 5em;
+    color: rgba(0, 17, 72, 0.75);
 }
 
 .arrow {
@@ -191,18 +204,23 @@ h2 {
     background-color: #EEBB15;
     color: #FFFFFF;
     padding: 0.25em 0.5em;
-    font-weight: 500;
-    font-size: x-large;
     display: flex;
-    align-items: center;
     margin: auto;
 }
 
+#newProject a {
+    display: flex;
+    align-items: center;
+}
 
+#newProject h3 {
+    font-weight: 500;
+    font-size: x-large;
+}
 
 #newProject img {
-    width: 1em;
-    margin: 0 0.5em;
+    width: 2em;
+    margin: 0.25em 0.5em;
 }
 
 #newProject:hover {
@@ -211,6 +229,7 @@ h2 {
 
 .arrow:hover {
     color: #7A94E5;
+    cursor: pointer;
 }
 
 .arrow:nth-of-type(2):hover {
@@ -258,7 +277,10 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: url("");
 }
+
+
 
 #project {
     background-color: rgb(122, 148, 229, 50%);
@@ -272,6 +294,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 0.5em;
 }
 
 #links {
@@ -281,6 +304,7 @@ h2 {
 
 #links i:hover {
     color: #001148;
+    cursor: pointer;
 }
 
 #project h3 {
@@ -289,13 +313,183 @@ h2 {
     text-align: center;
 }
 
+footer p {
+    display: none;
+    position: absolute;
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
 footer {
     padding: 1em;
-    background-color: rgba(0, 7, 32, 0.75); 
+    background-color: rgba(0, 17, 72, 0.75); 
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+footer:hover{
+    animation: blurryback 1s both;
+}
+
+@keyframes blurryback {
+    0% {
+        backdrop-filter: blur(0px);
+    }
+    100% {
+        backdrop-filter: blur(40px);
+    }
+}
+
+footer:hover .logo {
+    animation: blurry 2s both;
+}
+
+@keyframes blurry {
+    0% {
+        filter: blur(0px);
+    }
+    100% {
+        filter: blur(40px);
+    }
+}
+
+footer:hover p {
+    display: block;
+    animation: easein 1s both;
+}
+
+@keyframes easein {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
 
 img, svg {
     width: 3em;
+}
+
+@media screen and (max-width: 321px) {
+    #rightArrow, #leftArrow {
+        top: 300vh !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    header {
+        flex-direction: column;
+    }
+    
+    .logo {
+        width: 5em;
+        padding-left: 0;
+    }
+    
+    ul {
+        padding: 0 !important;
+        background-color: rgba(0, 17, 72, 0.25); 
+    }
+
+    li {
+        font-size: larger;
+    }
+
+    #lang {
+
+        top: 9em;
+        flex-direction: column;
+    }
+
+    .nav {
+        margin-left: 0.5em;
+        top: 62vh;
+    }
+
+    h2 {
+        width: 50%;
+        font-size: large;
+    }
+
+    #hero section {
+        font-size: 21px;
+        left: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        top: 15em;
+    }
+
+    #line {
+        margin-right: 0.5em;
+    }
+
+    #hero section h3 {
+        margin-right: 1em;
+    }
+
+    #heroChar {
+        width: 15.5em;
+    }
+
+    #aboutChar {
+        width: 9em;
+        right: -50%;
+    }
+
+    #project h3, #links {
+        font-size: 200%;
+    }
+
+    #project {
+        width: 100%;
+        margin-bottom: 10em;
+    }
+
+    .arrow {
+        font-size: 5em;
+    }
+
+    #rightArrow, #leftArrow {
+        position: absolute;
+        top: 285vh;
+    }
+
+    #rightArrow {
+        right: 25%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+        flex-direction: column;
+    }
+
+    #lang {
+        top: 9em;
+        flex-direction: column;
+    }
+    
+    h2 {
+        width: 50%;
+        font-size: large;
+    }
+
+    #heroChar {
+        width: 15.5em;
+    }
+
+    #project {
+        width: 100%;
+    }
+
+    #project h3, #links {
+        font-size: 45px;
+    }
 }
