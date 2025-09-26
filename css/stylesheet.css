@@ -135,7 +135,7 @@ header .logo {
 
 #heroChar {
     position: absolute;
-    bottom: 0;
+    bottom: 0vh;
     right: 10%;
     width: 22.5em;
 }
@@ -376,8 +376,8 @@ img, svg {
 }
 
 @media screen and (max-width: 321px) {
-    #rightArrow, #leftArrow {
-        top: 300vh !important;
+    header {
+        align-items: normal;
     }
 }
 
@@ -385,11 +385,13 @@ img, svg {
 
     header {
         flex-direction: column;
+        width: 100%;
     }
     
-    .logo {
+    header .logo {
         width: 5em;
         padding-left: 0;
+        margin: auto;
     }
     
     ul {
@@ -423,7 +425,6 @@ img, svg {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        top: 15em;
     }
 
     #line {
@@ -456,13 +457,16 @@ img, svg {
         font-size: 5em;
     }
 
-    #rightArrow, #leftArrow {
-        position: absolute;
-        top: 285vh;
+    #leftArrow {
+        display: none;
     }
 
     #rightArrow {
-        right: 25%;
+        position: absolute;
+    }
+
+    #rightArrow {
+        left: 75%;
     }
 }
 
