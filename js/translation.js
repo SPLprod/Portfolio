@@ -26,10 +26,25 @@ const en = {lang : "en"};
 
 
 // récuppérer la langue utilisateur pour le site
-langFetch = localStorage.getItem("lang")
-langFetch = JSON.parse(langFetch)
-console.log(langFetch);
-pageLang.lang = langFetch.lang
+
+
+if (localStorage.getItem("lang") == '{"lang":"fr"}' || localStorage.getItem("lang") == '{"lang":"en"}') {
+    langFetch = localStorage.getItem("lang")
+    langFetch = JSON.parse(langFetch)
+    console.log(langFetch);
+    pageLang.lang = langFetch.lang;
+    
+} else {
+    localStorage.setItem("lang", '{"lang":"fr"}')
+    langFetch = localStorage.getItem("lang")
+    console.log(langFetch);
+    langFetch = JSON.parse(langFetch)
+    pageLang.lang = langFetch.lang;
+}
+
+// console.log(langFetch);
+
+
 
 const langJSON = "json/translation.json"
 fetch(langJSON)
@@ -41,8 +56,8 @@ fetch(langJSON)
         uLangChoice.addEventListener("click", () => {
             if (langAvailable.style.display == "none") {
                 langAvailable.style.display = "flex";
-                const langFR = document.querySelector("#lang span:nth-of-type(1)");
-                const langEN = document.querySelector("#lang span:nth-of-type(2)");
+                const langFR = document.querySelector(".flag:nth-of-type(1)");
+                const langEN = document.querySelector(".flag:nth-of-type(2)");
                 
                 console.log(langFR);
                 console.log(langEN);
