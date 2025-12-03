@@ -8,10 +8,10 @@
     },
 
     {
-        "title" : "TEST2",
-        "thumbnail" : "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODc1M2x1cGJoa2sxZWQ2djR2d3VuYmJra3Z6ZWtvMmFicmg2MHhhMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Ju7l5y9osyymQ/giphy.gif",
-        "link" : "[LINK]",
-        "repo" : "[LINK]"
+        "title" : "REACTJS",
+        "thumbnail" : "img/ReactJs_thumbnail.png",
+        "link" : "https://github.com/SPLprod/ReactJs",
+        "repo" : "https://github.com/SPLprod/ReactJs"
     }
 
 ]
